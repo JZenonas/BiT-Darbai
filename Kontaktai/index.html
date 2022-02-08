@@ -7,16 +7,30 @@
     <title>Kontaktinė informacija</title>
 </head>
 <body>
-    <form action="/pridavimas.html">
-        <label for="name">Jūsų vardas:</label>
-        <input type="text" id="name" name="name" placeholder="Jūsų vardas" minlength="2" maxlength="50"><br>
-        <label for="lastname">Last name:</label>
-        <input type="text" id="lastname" name="lastname" placeholder="Jūsų pavardė" minlength="2" maxlength="50"><br>
-        <label for="phonenumber">Telefono numeris:</label>
-        <input type="text" id="phonenumber" name="phonenumber" placeholder="Jūsų telefono numeris" minlength="5" maxlength="11"><br>
-        <label for="message">Jūsų žinutė:</label>
-        <textarea name="message" placeholder="Jūsų žinutė..." id="message" maxlength="500" minlength="20" cols="30" rows="10"></textarea>
-        <input type="submit" value="Submit">
-      </form> 
+    <form method="post" action="./pridavimas.html">
+        <fieldset>
+            <legend>Kontaktinė informacija</legend>
+            <label>
+                Jūsų vardas:
+                <input type="text" name="name" placeholder="Jūsų vardas" minlength="2" maxlength="50"><br>
+            </label>
+            <label>
+                Jūsų pavardė:
+                <input type="text" name="lastname" placeholder="Jūsų pavardė" minlength="2" maxlength="50"><br>
+            </label>
+            <label>
+                Telefono numeris:
+                <input type="text" name="phonenumber" placeholder="Jūsų telefono numeris" minlength="5" maxlength="11"><br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Užklausa</legend>
+            <label>
+                Jūsų žinutė:
+                <textarea name="message" placeholder="Jūsų žinutė..." maxlength="500" minlength="20" cols="30" rows="10"></textarea>
+            </label><br>
+        </fieldset>
+        <input type="submit" value="Pateikti">
+    </form>
 </body>
 </html>
